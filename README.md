@@ -81,15 +81,19 @@ You must store your **Spotify API credentials** as environment variables so the 
 Create a file named `.env` in your project root and add the following:
 
 ```env
-SPOTIPY_CLIENT_ID=your_spotify_client_id
-SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
+# Spotify API Credentials
+
+SPOTIFY_CLIENT_ID=your_spotify_client_id
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 ```
 ### Structure
 
 ```
-spotify-discography-fetcher/
+spotify-track-counter/
 │
 ├── .env
+├── .gitignore
+├── LICENSE
 ├── main.py
 ├── utils/
 │   ├── spotify_client.py
