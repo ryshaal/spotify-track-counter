@@ -3,9 +3,7 @@
 A command-line Python application that fetches and analyzes an artist’s full discography using the **Spotify Web API** via **Spotipy**.
 Displays formatted statistics, release summaries, and tracklists in a colorful console interface — and optionally exports the results to a CSV file.
 
----
-
-## Features
+ **Features:**
 
 * Fetch artist information directly by **name** or **Spotify URL**
 * Retrieve complete **discography** (albums, singles, compilations, and appearances)
@@ -22,8 +20,12 @@ Displays formatted statistics, release summaries, and tracklists in a colorful c
 * Progress bar with **tqdm**
 
 ---
-
-## Dependencies
+### Clone Repository
+```bash
+git clone https://github.com/ryshaal/spotify-track-counter.git
+cd spotify-track-counter
+```
+### Install Dependencies
 
 This project uses the following Python packages:
 
@@ -51,17 +53,16 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
----
 
-## Setting Up Spotify API
+### Setting Up Spotify API
 
 This application uses **Spotify Web API** through the **Spotipy** library.
 
-### 1. Create a Spotify Developer Account
+#### 1. Create a Spotify Developer Account
 
 Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) and **log in** with your Spotify account.
 
-### 2. Create a New App
+#### 2. Create a New App
 
 Click **"Create App"** and fill in:
 
@@ -73,18 +74,32 @@ After creation, you will get:
 * **Client ID**
 * **Client Secret**
 
-### 3. Set Up Environment Variables
+#### 3. Set Up Environment Variables
 
-Store your **Spotify API credentials** in a `.env` file in your project root:
+You must store your **Spotify API credentials** as environment variables so the app can authenticate.
+
+Create a file named `.env` in your project root and add the following:
 
 ```env
 SPOTIPY_CLIENT_ID=your_spotify_client_id
 SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
 ```
+### Structure
 
----
+```
+spotify-discography-fetcher/
+│
+├── .env
+├── main.py
+├── utils/
+│   ├── spotify_client.py
+│   └── helpers.py
+│
+├── requirements.txt
+└── README.md
+```
 
-## How to Run
+### How to Run
 
 1. Open your terminal in the project directory
 2. Run the main script:
@@ -108,9 +123,9 @@ https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ
 * Export discography to CSV (optional)
 * Search songs by keyword (optional)
 
----
 
-## Example Output
+
+### Example Output
 
 ```text
 Welcome — Spotify Artist Discography Fetcher
@@ -155,22 +170,20 @@ Export data to CSV? (y/n): y
 📁 File location: discography/The_Weeknd_discography.csv
 ```
 
----
-
-## CSV Output Example
+### CSV Output Example
 
 | artist     | track           | album       | year | type  | duration | url                                                                   |
 | ---------- | --------------- | ----------- | ---- | ----- | -------- | --------------------------------------------------------------------- |
 | The Weeknd | Blinding Lights | After Hours | 2020 | album | 3:20     | [https://open.spotify.com/track/](https://open.spotify.com/track/)... |
 | The Weeknd | Save Your Tears | After Hours | 2020 | album | 3:36     | [https://open.spotify.com/track/](https://open.spotify.com/track/)... |
 
----
+
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute with attribution.
 
----
+
 
 ## Support
 
