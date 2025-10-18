@@ -19,7 +19,7 @@ Displays formatted statistics, release summaries, and tracklists in a colorful c
 * Clean terminal output using **Rich** and **Colorama**
 * Progress bar with **tqdm**
 
-<a href='https://ko-fi.com/O4O3SSNN' target='_blank'><img height='40' style='border:0px;height:40px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='https://ko-fi.com/riyhsal/5' target='_blank'><img height='40' style='border:0px;height:40px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 ---
 ### Clone Repository
 ```bash
