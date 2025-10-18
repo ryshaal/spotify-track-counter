@@ -19,6 +19,10 @@ Displays formatted statistics, release summaries, and tracklists in a colorful c
 * Clean terminal output using **Rich** and **Colorama**
 * Progress bar with **tqdm**
 
+<a href="https://ko-fi.com/riyhsal">
+  <img src="https://ryshaal.github.io/assets/img/doante.svg" width="182" alt="Donate">
+</a>
+
 ---
 ### Clone Repository
 ```bash
